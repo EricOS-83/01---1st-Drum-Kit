@@ -1,0 +1,64 @@
+/** Find the number of drum kit buttons */
+
+var NumberOfButtons = document.querySelectorAll(".button").length;
+
+
+/** Add a listener to all buttons that executes function playAudio on click */
+
+for(i=0;i<NumberOfButtons;i++){
+
+document.querySelectorAll(".button")[i].addEventListener("click", playAudio);
+
+}
+
+
+function playAudio(){
+
+/**This will get the text inside the button-text span, such as "A", and remove any extra whitespace around it. */
+/**textContent is used instead of innerHTML to avoid grabbing any HTML tags, ensuring you only get the text. */    
+
+var buttonInnerHTML = this.querySelector('.button-text').textContent.trim();
+
+
+
+switch(buttonInnerHTML){
+    case "A":
+        var clap = new Audio("sounds/clap.wav");
+        clap.play();
+        break;
+    case "S":
+        var hihat = new Audio("sounds/hihat.wav");
+        hihat.play();
+        break;
+    case "D":
+        var kick = new Audio("sounds/kick.wav");
+        kick.play();
+        break;
+    case "F":
+        var openhat = new Audio("sounds/openhat.wav");
+        openhat.play();
+        break;
+    case "G":
+        var boom = new Audio("sounds/boom.wav");
+        boom.play();
+        break;
+    case "H":
+        var ride = new Audio("sounds/ride.wav");
+        ride.play();
+        break;
+    case "J":
+        var snare = new Audio("sounds/snare.wav");
+        snare.play();
+        break;
+    case "K":
+        var tom = new Audio("sounds/tom.wav");
+        tom.play();
+        break;
+    case "L":
+        var tink = new Audio("sounds/tink.wav");
+        tink.play();
+        break;
+    default:
+        text = "Not Supported";
+}
+}    

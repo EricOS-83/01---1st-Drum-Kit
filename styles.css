@@ -1,0 +1,52 @@
+body {
+  background-image: url("background.jpg");   
+}
+
+.flex_container{
+/* define the flexbox container in order to align contents horizontally and vertically in the center of the webpage */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+
+ 
+.button {
+border: 5px solid black;
+min-width: 150px;
+min-height:90px;
+text-align: center;
+margin-top:30px;
+margin-left:30px;
+background-color: rgba(0, 0, 0, 0.747);
+color: aliceblue;
+line-height: 40px; 
+}
+
+.button:hover {
+  border: 1px solid rgb(255, 196, 0);/* change to your desired color */
+  color: white; /* change to your desired color */
+
+}
+
+.button-text2{
+display: block;
+line-height: 1.5;
+color: rgb(255, 196, 0);
+}
+
+.bg-dark{
+background-color: black !important;
+opacity: 0.9;
+}
+
+.key_buttons{
+
+text-align: center;
+padding-top: 50px;
+padding-bottom: 50px;
+}
